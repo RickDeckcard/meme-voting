@@ -95,6 +95,8 @@ function renderMemes() {
       memeArray.push({
         creatorName: meme.name,
         memeUrl: meme.url,
+  @@ -82,43 +106,51 @@ window.addEventListener('load', async () => {
+      }
 )
     }
 
