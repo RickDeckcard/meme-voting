@@ -79,16 +79,7 @@ window.addEventListener('load', async () => {
 
   //Initialize the Aepp object through aepp-sdk.browser.js, the base app needs to be running.
   // initialize aeternity sdk client
-const client = await Universal({
-    url: 'https://sdk-testnet.aepps.com', //replace with https://sdk-mainnet.aepps.com for mainnet
-    internalUrl: 'https://sdk-testnet.aepps.com', //replace with https://sdk-mainnet.aepps.com for mainnet
-    keypair: {
-        publicKey: 'ak_6A2vcm1Sz6aqJezkLCssUXcyZTX7X8D5UwbuS2fRJr9KkYpRU',
-        secretKey: 'a7a695f999b1872acb13d5b63a830a8ee060ba688a478a08c6e65dfad8a01cd70bb4ed7927f97b51e1bcb5e1340d12335b2a2b12c8bc5221d63c4bcb39d41e61'
-    },
-    networkId: 'ae_uat', //replace with ae_mainnet for mainnet
-    nativeMode: true
-});;
+  client = await Ae.Aepp();
 
   //First make a call to get to know how may memes have been created and need to be displayed
   //Assign the value of meme length to the global variable
