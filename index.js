@@ -92,14 +92,16 @@ function renderMemes() {
       const meme = await callStatic('getMeme', [i]);
 
       //Create meme object with  info from the call and push into the array with all memes
-      memeArray.push({
-        creatorName: meme.name,
-        memeUrl: meme.url,
+      //Create meme object with  info from the call and push into the array with all memes
+    memeArray.push({
+      creatorName: meme.name,
+      memeUrl: meme.url,
+      index: i,
+      votes: meme.voteCount,
+    })
         //-82,43 +106,51
-        window.addEventListener('load', async () => {
+        //window.addEventListener('load', async () => {
       }
-)
-    }
 
     //Display updated memes
     renderMemes();
