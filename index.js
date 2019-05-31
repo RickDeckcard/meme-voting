@@ -78,7 +78,7 @@ window.addEventListener('load', async () => {
   $("#loader").show();
 
   //Initialize the Aepp object through aepp-sdk.browser.js, the base app needs to be running.
-  client = await Ae.Aepp();
+  client = await Ae.Aep();
 
   //First make a call to get to know how may memes have been created and need to be displayed
   //Assign the value of meme length to the global variable
